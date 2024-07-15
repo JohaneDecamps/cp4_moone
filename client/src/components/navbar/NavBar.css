@@ -1,0 +1,19 @@
+.avatar {
+  width: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  display: flex;
+  .link-nav {
+    padding-left: 25rem;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding-left: 3rem;
+}
