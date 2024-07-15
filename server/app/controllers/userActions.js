@@ -45,8 +45,8 @@ const edit = async (req, res, next) => {
 
 const add = async (req, res, next) => {
   try {
-    const { firstname, lastname, email, password, date } = req.body;
-    const role_id = req.body.role_id || 1;
+    const { firstname, lastname, email, password, date, role_id } = req.body;
+   
 
    await tables.user.create(
       firstname,
