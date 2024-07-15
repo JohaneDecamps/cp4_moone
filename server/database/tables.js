@@ -1,6 +1,7 @@
 // Import the repository modules responsible for handling data operations on the tables
 const UserRepository = require("./models/UserRepository");
 const CategoryRepository = require("./models/CategoryRepository");
+const ArticleRepository = require("./models/ArticleRepository");
 
 // Create an empty object to hold data repositories for different tables
 const tables = {};
@@ -12,6 +13,7 @@ const tables = {};
 // Register each repository as data access point for its table
 tables.user = new UserRepository();
 tables.category = new CategoryRepository();
+tables.article = new ArticleRepository();
 /* ************************************************************************* */
 
 // Use a Proxy to customize error messages when trying to access a non-existing table
