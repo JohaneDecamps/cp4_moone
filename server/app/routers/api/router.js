@@ -10,4 +10,8 @@ const categoriesRouter = require("./categories/router")
 
 router.use("/categories", categoriesRouter)
 
+const articlesRouter = require("./articles/router")
+
+router.use("/articles", articlesRouter)
+
 module.exports = router;

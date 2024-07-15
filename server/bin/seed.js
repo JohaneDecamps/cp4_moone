@@ -87,8 +87,10 @@ const seed = async () => {
 
       await doRun(queue);
     };
+    const [ArticleSeeder, CategorySeeder, UserSeeder] = sortedSeeders;
+    const ArraySeeder = [UserSeeder, CategorySeeder, ArticleSeeder];
 
-    await doRun(sortedSeeders);
+    await doRun(ArraySeeder);
 
     // Close the database connection
     database.end();
