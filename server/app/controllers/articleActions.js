@@ -6,7 +6,7 @@ const browse = async (req, res, next) => {
   try {
     const articles = await tables.article.readAll();
 
-   res.json(articles).status(200);
+    res.json(articles).status(200);
   } catch (err) {
     next(err);
   }
@@ -18,11 +18,8 @@ const read = async (req, res, next) => {
 
     const article = await tables.article.read(id);
 
-    if (article == null) {
-      res.sendStatus(404);
-    } else {
-      res.status(200).json(article);
-    }
+    if (article !== null) res.json(article).status(200);
+    else res.status(404);
   } catch (err) {
     next(err);
   }
@@ -44,26 +41,25 @@ const edit = async (req, res, next) => {
   try {
     const { reference, description, image, date, category_id } = req.body;
 
-    await tables.article.edit(
+    await tables.article.update(
       reference,
       description,
       image,
       date,
       category_id
     );
-    res.sendStatus(204)
+    res.sendStatus(204);
   } catch (err) {
     next(err);
   }
 };
-
 
 const destroy = async (req, res, next) => {
   try {
     const { id } = req.params;
     await tables.article.destroy(id);
 
-    res.sendStatus(204)
+    res.sendStatus(204);
   } catch (err) {
     next(err);
   }
