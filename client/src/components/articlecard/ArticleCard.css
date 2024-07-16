@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Bellota;
+  src: url("../../assets/fonts/Bellota_Text/BellotaText-Light.ttf");
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+* {
+  margin: 0;
+}
+
+.image-card {
+  height: 12rem;
+  width: 10rem;
+  object-fit: cover;
+}
+
+.reference-card {
+  font-family: "Bellota";
+  font-weight: 100;
+}
