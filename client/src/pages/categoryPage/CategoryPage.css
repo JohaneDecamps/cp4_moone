@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Bellota;
+  src: url("../../assets/fonts/Bellota_Text/BellotaText-Light.ttf");
+}
+
+.title-categoryPage {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Bellota";
+  font-weight: 100;
+}
+
+.photo-category {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  opacity: 60%;
+}
+.container-articlecard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
