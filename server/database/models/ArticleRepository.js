@@ -16,7 +16,7 @@ class VideoRepository extends AbstractRepository {
 
   async read(id) {
     const [row] = await this.database.query(
-      `SELECT id, reference, description, image, date FROM ${this.table} where id = ?`,
+      `SELECT id, reference, description, image, date FROM ${this.table} WHERE id = ?`,
       [id]
     );
 
@@ -33,7 +33,7 @@ class VideoRepository extends AbstractRepository {
     } = article;
 
     const [result] = await this.database.query(
-      `INSERT INTO ${this.table} (reference, description, image, date, category_id) values(?, ?, ?, ?, ?)`,
+      `INSERT INTO ${this.table} (reference, description, image, date, category_id) VALUES(?, ?, ?, ?, ?)`,
       [reference, description, image, date, category_id]
     );
 
@@ -41,14 +41,14 @@ class VideoRepository extends AbstractRepository {
   }
 
   async update(article) {
-    const { category_id } = article;
+    const { reference, category_id } = article;
 
     const [result] = await this.database.query(
       `UPDATE ${this.table} SET category_id=? WHERE id=?`,
-      [category_id]
+      [reference, category_id]
     );
 
-    return result.affectedRows;
+    return result;
   }
 
  

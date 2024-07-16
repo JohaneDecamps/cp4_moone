@@ -7,7 +7,7 @@ class CategoryRepository extends AbstractRepository {
 
   async readAll() {
     const [result] = await this.database.query(
-      `select id, name from ${this.table}`
+      `SELECT id, name from ${this.table}`
     );
 
     return result;
@@ -16,36 +16,37 @@ class CategoryRepository extends AbstractRepository {
   async read(id) {
     const [rows] = await this.database.query(
       `SELECT c.name, a.id, a.reference, a.description, a.image, a.date 
-         FROM ${this.table} AS c  
-         LEFT JOIN article AS a ON c.id = a.category_id 
-         WHERE c.name = ?`,
+         FROM ${this.table} AS c LEFT JOIN article AS a ON c.id = a.category_id  WHERE c.name = ?`,
       [id]
     );
 
     return rows;
   }
 
-  async create(name) {
+  async create(category) {
+    const {name} = category
     const [rows] = await this.database.query(
-      `insert into ${this.table} (name) value (?)`,
+      `INSERT INTO ${this.table} (name) VALUE (?)`,
       [name]
     );
 
     return rows.insertId;
   }
 
-  async update(name, id) {
+  async update(category) {
+    const {name, id} = category;
+
     const [result] = await this.database.query(
-      `update ${this.table} set name = ? where id = ? `,
+      `UPDATE ${this.table} SET name = ? WHERE id = ? `,
       [name, id]
     );
 
-    return result.affectedRows;
+    return result
   }
 
   async delete(id) {
     const [row] = await this.database.query(
-      `delete from ${this.table} where id = ?`,
+      `DELETE FROM ${this.table} WHERE id = ?`,
       [id]
     );
     return row.affectedRows;
