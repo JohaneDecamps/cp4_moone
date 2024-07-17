@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Allerta;
+  src: url("../../assets/fonts/Bellota_Text/BellotaText-Light.ttf");
+}
+
 .avatar {
   width: 1.5rem;
 }
@@ -6,7 +11,8 @@
   display: flex;
   align-items: center;
   height: 4rem;
-  display: flex;
+  font-family: "Allerta";
+  font-weight: 600;
   .link-nav {
     padding-left: 25rem;
   }

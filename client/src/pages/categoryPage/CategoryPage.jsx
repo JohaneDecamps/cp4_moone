@@ -21,7 +21,8 @@ console.info(result)
       };
       fetchCategory()
   }, [categoryName])
-
+console.info("result", result)
+console.info("categoryname:", categoryName)
     return (
         <> 
         <img

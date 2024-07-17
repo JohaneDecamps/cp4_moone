@@ -1,14 +1,14 @@
 /* eslint-disable camelcase */
 const AbstractRepository = require("./AbstractRepository");
 
-class VideoRepository extends AbstractRepository {
+class ArticleRepository extends AbstractRepository {
   constructor() {
     super({ table: "article" });
   }
 
   async readAll() {
     const [rows] = await this.database.query(
-      `SELECT a.id, a.reference, a.description, a.image, a.date, c.name as category_name FROM ${this.table} AS a JOIN category AS c ON a.category_id=c.id`
+      `SELECT id, reference, description, image, date, category_id FROM ${this.table}`
     );
 
     return rows;
@@ -16,7 +16,7 @@ class VideoRepository extends AbstractRepository {
 
   async read(id) {
     const [row] = await this.database.query(
-      `SELECT id, reference, description, image, date FROM ${this.table} WHERE id = ?`,
+      `SELECT a.id, a.reference, a.description, a.image, a.date, c.name as category FROM ${this.table} AS a JOIN category AS c ON a.category_id=c.id where a.id = ?`,
       [id]
     );
 
@@ -63,4 +63,4 @@ class VideoRepository extends AbstractRepository {
   }
 }
 
-module.exports = VideoRepository;
+module.exports = ArticleRepository;

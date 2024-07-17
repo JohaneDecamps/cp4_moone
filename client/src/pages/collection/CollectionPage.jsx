@@ -36,7 +36,7 @@ export default function CollectionPage() {
           ))}
         </div>
         <div className="articles-collection">
-          {articleData.map((a) => (
+          {articleData?.map((a) => (
               <Link to={`/articles/${a.id}`} key={a.reference}>
                 <img src={a.image} className="article-image" alt="" />
                 <h1 className="reference"> {a.reference} </h1>
