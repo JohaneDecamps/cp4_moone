@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-
 import { useEffect, useState } from "react";
 import fetchAuth from "./utils/auth";
 
@@ -15,6 +14,7 @@ useEffect(() => {
 
   return (
     <main>
+      <p> hello {currentUser?.firstname} </p>
       <NavBar />
       <Outlet context= {{currentUser, setCurrentUser}} />
     </main>

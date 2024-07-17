@@ -5,8 +5,7 @@ import axios from "axios";
 import {useOutletContext} from "react-router-dom"
 
 export default function LoginPage() {
-const {setCurrentUser} = useOutletContext()
-
+const {curentUser, setCurrentUser} = useOutletContext()
 
   const {
     register,
@@ -26,6 +25,7 @@ const {setCurrentUser} = useOutletContext()
         .then((response) => {
           setCurrentUser(response.data.user);
         }); 
+        console.warn(curentUser)
     } catch (err) {
       console.error(err);
     } console.info("data", data)
@@ -48,7 +48,7 @@ const {setCurrentUser} = useOutletContext()
         />
         {errors.email && <span> {errors.email.message} </span>}
 
-        <label htmlFor="password"> Mot de pass</label>
+        <label htmlFor="password"> Mot de passe</label>
         <input
           type="password"
           name="password"

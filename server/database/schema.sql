@@ -9,8 +9,7 @@ CREATE TABLE user (
     lastname VARCHAR(100) NOT NULL,
     email VARCHAR(120) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    role_id INT UNSIGNED DEFAULT 1,
-    date DATE
+    role_id INT UNSIGNED DEFAULT 1
 );
 
 CREATE TABLE category (

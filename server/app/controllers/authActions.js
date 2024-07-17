@@ -4,7 +4,7 @@ const tables = require("../../database/tables");
 const { encodeJWT, decodeJWT } = require("../helpers/jwtHelper");
 
 const login = async (req, res) => {
-  const { email, password } = req.boby;
+  const { email, password } = req.body;
   const [user] = await tables.user.findByEmail(email);
 
   if (!user) {
