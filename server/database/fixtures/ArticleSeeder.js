@@ -11,7 +11,6 @@ class ArticleSeeder extends AbstractSeeder {
         reference: this.faker.lorem.word(),
         description: this.faker.lorem.paragraph(),
         image: this.faker.image.urlPicsumPhotos(),
-        imagetwo : this.faker.image.urlPicsumPhotos(),
         date: this.faker.date.recent(),
         category_id: this.faker.number.int({ min: 1, max: 3 }),
         user_id: this.faker.number.int({ min: 1, max: 9 }),

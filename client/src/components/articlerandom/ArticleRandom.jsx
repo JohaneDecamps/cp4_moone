@@ -1,5 +1,13 @@
+/* eslint-disable import/no-unresolved */
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./ArticleRandom.css";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export default function ArticleRandom() {
   const [articleRandom, setArticleRandom] = useState();
@@ -15,16 +23,40 @@ export default function ArticleRandom() {
   console.info("random is", articleRandom);
 
   return (
-    <> 
-    <h1 className="title-random"> Articles similaires </h1> 
-    <section className="random-container">
-      {articleRandom?.map((f) => (
-       <div key={f} className="random-article"> 
-          <img alt="" src={f.image} className="random-image"/>
-          <h1 key={f.reference}> {f.reference} </h1>
-       </div>
+
+    <Swiper 
+      slidesPerView={1}
+      spaceBetween={66}
+      breakpoints={{
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      style={{
+        "--swiper-navigation-color": "rgb(0)",
+        "--swiper-pagination-color": "rgb(255,250,250)",
+      }}
+      navigation
+      modules={[Pagination, Navigation]}
+      className="heroSwiper"
+      id="swipper-co"
+    >
+      {articleRandom?.map((r) => (
+        <SwiperSlide key={r}  >
+          <NavLink to={`/articles/${r.id}`}>
+            <img  src={r.image} alt={r.reference} id="random-image"/>
+          </NavLink>
+        </SwiperSlide>
       ))}
-    </section>
-    </> 
+    </Swiper>
   );
+
 }

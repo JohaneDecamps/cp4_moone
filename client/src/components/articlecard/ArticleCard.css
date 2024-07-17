@@ -12,10 +12,6 @@
   font-family: "Bellota";
 }
 
-.image-two {
-  display: none;
-}
-
 .image-card {
   height: 20rem;
   width: 18rem;
@@ -24,8 +20,11 @@
 
 .reference-card {
   font-family: "Bellota";
-  font-weight: 100;
+  font-weight: 1000;
+  font-size: 2rem;
 }
 .description-card {
   margin-top: 3rem;
+  font-size: 1rem;
+  font-weight: 3000;
 }

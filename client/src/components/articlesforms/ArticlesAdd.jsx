@@ -96,16 +96,16 @@ export default function ArticlesAdd() {
         {errors.image && <span> {errors.image.message} </span> }
      </div>
      <div className="input-add-article"> 
-        <label htmlFor="image"> Image </label> 
+        <label htmlFor="image"> Date d'ajout </label> 
         <input 
         type="text"
-        name="image"
-        placeholder="Veuillez entrer un url"
+        name="date"
+        placeholder="Date"
         className="input-image-article"
-        {...register("image", {
+        {...register("date", {
             required: "ce champs est requis"
         })}/>
-        {errors.image && <span> {errors.image.message} </span> }
+        {errors.date && <span> {errors.date.message} </span> }
      </div>
         <button className="button-add-article" type="submit"> Ajouter un article </button>
       </form>

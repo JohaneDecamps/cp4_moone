@@ -8,7 +8,7 @@ class ArticleRepository extends AbstractRepository {
 
   async readAll() {
     const [rows] = await this.database.query(
-      `SELECT id, reference, description, image, imagetwo, date, category_id FROM ${this.table}`
+      `SELECT id, reference, description, image, date, category_id FROM ${this.table}`
     );
 
     return rows;
@@ -16,7 +16,7 @@ class ArticleRepository extends AbstractRepository {
 
   async read(id) {
     const [row] = await this.database.query(
-      `SELECT a.id, a.reference, a.description, a.image, imagetwo, a.date, c.name as category FROM ${this.table} AS a JOIN category AS c ON a.category_id=c.id where a.id = ?`,
+      `SELECT a.id, a.reference, a.description, a.image, a.date, c.name as category FROM ${this.table} AS a JOIN category AS c ON a.category_id=c.id where a.id = ?`,
       [id]
     );
 
@@ -27,15 +27,14 @@ class ArticleRepository extends AbstractRepository {
     const {
       reference,
       description,
-      image,
-      imagetwo, 
+      image, 
       date,
       category_id,
     } = article;
 
     const [result] = await this.database.query(
-      `INSERT INTO ${this.table} (reference, description, image, imagetwo, date, category_id) VALUES(?, ?, ?, ?, ?)`,
-      [reference, description, image, imagetwo, date, category_id]
+      `INSERT INTO ${this.table} (reference, description, image, date, category_id) VALUES(?, ?, ?, ?, ?)`,
+      [reference, description, image, date, category_id]
     );
 
     return result.insertId;

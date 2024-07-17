@@ -19,11 +19,15 @@
 .container-article-category {
   margin-top: 2rem;
   margin-bottom: 30rem;
+  margin-right: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+  a {
+    margin: 0;
+  }
   .article-reference-category {
     text-align: center;
     font-family: "Bellota";

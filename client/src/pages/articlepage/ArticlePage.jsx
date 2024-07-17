@@ -1,3 +1,4 @@
+
 import { useLoaderData } from "react-router-dom";
 
 import ArticleCard from "../../components/articlecard/ArticleCard";
@@ -14,6 +15,7 @@ export default function ArticlePage() {
     <section className="container-articlePage">
       <ArticleCard article={articleDatas} />
  </section>
+   <h1 className="title-random"> Articles similaires </h1>
       <ArticleRandom />
     </>
   );
