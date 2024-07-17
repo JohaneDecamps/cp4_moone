@@ -7,6 +7,7 @@ import App from "./App";
 import HomePage from "./pages/homepage/HomePage";
 import CollectionPage from "./pages/collection/CollectionPage";
 import CategoryPage from "./pages/categoryPage/CategoryPage";
+import AdminPage from "./pages/adminpage/AdminPage";
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         path: "categories/:name",
         element: <CategoryPage />,
       },
+      {
+        path : "/admin",
+        element : <AdminPage/>
+      }
     ],
   },
 ]);

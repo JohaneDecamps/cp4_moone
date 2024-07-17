@@ -11,8 +11,8 @@ export default function NavBar() {
         <Link to="/"> SAVOIR FAIRE  </Link>
         <Link to="/collection"> LA COLLECTION </Link>
         
-        <Link to="/connexion">
-          <img src={avatar} alt="avatar" className="avatar" />{" "}
+        <Link to="/admin">
+          <img src={avatar} alt="avatar" className="avatar" />
         </Link>
         </div>
       </ul>
