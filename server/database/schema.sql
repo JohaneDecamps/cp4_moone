@@ -23,6 +23,7 @@ CREATE TABLE article (
     reference VARCHAR(255) NOT NULL,
     description TEXT,
     image VARCHAR(255),
+    imagetwo VARCHAR(255),
     date DATE,
     category_id INT UNSIGNED,
     FOREIGN KEY (category_id) REFERENCES category (id),

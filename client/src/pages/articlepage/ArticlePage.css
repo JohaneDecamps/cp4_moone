@@ -1,0 +1,4 @@
+.container-articlePage {
+  display: flex;
+  max-width: 60rem;
+}

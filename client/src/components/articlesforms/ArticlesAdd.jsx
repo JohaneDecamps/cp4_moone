@@ -95,6 +95,18 @@ export default function ArticlesAdd() {
         })}/>
         {errors.image && <span> {errors.image.message} </span> }
      </div>
+     <div className="input-add-article"> 
+        <label htmlFor="image"> Image </label> 
+        <input 
+        type="text"
+        name="image"
+        placeholder="Veuillez entrer un url"
+        className="input-image-article"
+        {...register("image", {
+            required: "ce champs est requis"
+        })}/>
+        {errors.image && <span> {errors.image.message} </span> }
+     </div>
         <button className="button-add-article" type="submit"> Ajouter un article </button>
       </form>
 

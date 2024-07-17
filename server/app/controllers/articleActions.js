@@ -39,12 +39,13 @@ const add = async (req, res, next) => {
 
 const edit = async (req, res, next) => {
   try {
-    const { reference, description, image, date, category_id } = req.body;
+    const { reference, description, image, imagetwo, date, category_id } = req.body;
 
     await tables.article.update(
       reference,
       description,
       image,
+      imagetwo, 
       date,
       category_id
     );
