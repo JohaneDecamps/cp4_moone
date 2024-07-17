@@ -25,6 +25,7 @@
 
 .input-add-article {
   display: flex;
+  margin-left: 3rem;
 }
 
 .input-image-article {

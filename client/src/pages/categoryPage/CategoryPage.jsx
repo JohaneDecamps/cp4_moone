@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import ArticleCard from "../../components/articlecard/ArticleCard";
+import { useParams, Link } from "react-router-dom";
 
 import imgCollection from "../../assets/images/img-collectionpage.jpeg";
 import "./CategoryPage.css"
@@ -32,11 +31,14 @@ console.info("categoryname:", categoryName)
       />
 
 <h1 className="title-categoryPage"> {categoryName.name} </h1>
-        <div className="container-articlecard"> 
+        <div className="container-article-category"> 
             
 
     {result?.map((b) => (
-        <ArticleCard key={b} article={b}/>
+  <Link to ={`/articles/${b.id}`} key={b.reference}> 
+       <img src={b.image} className="article-image-category" alt=""/>
+       <h1 className="article-reference-category"> {b.reference} </h1>
+</Link>
     ))}
   </div>
     </>

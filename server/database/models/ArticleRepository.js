@@ -27,7 +27,7 @@ class ArticleRepository extends AbstractRepository {
     const {
       reference,
       description,
-      image,
+      image, 
       date,
       category_id,
     } = article;
