@@ -8,6 +8,8 @@ import HomePage from "./pages/homepage/HomePage";
 import CollectionPage from "./pages/collection/CollectionPage";
 import CategoryPage from "./pages/categoryPage/CategoryPage";
 import AdminPage from "./pages/adminpage/AdminPage";
+import SignupPage from "./pages/signuppage/SignupPage";
+import LoginPage from "./pages/loginpage/LoginPage"
 
 
 const router = createBrowserRouter([
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path : "/admin",
         element : <AdminPage/>
+      },
+      {
+        path : "/signup",
+        element: <SignupPage/>
+      },
+      {
+        path: "/login",
+        element: <LoginPage/>
       }
     ],
   },

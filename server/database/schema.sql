@@ -10,7 +10,7 @@ CREATE TABLE user (
     email VARCHAR(120) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     role_id INT UNSIGNED DEFAULT 1,
-    date DATE NOT NULL
+    date DATE
 );
 
 CREATE TABLE category (

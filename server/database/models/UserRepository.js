@@ -22,10 +22,10 @@ class UserRepository extends AbstractRepository {
     return rows[0];
   }
 
- async create(firstname, lastname, email, password, role_id, date) {
+ async create(firstname, lastname, email, password) {
     const [result] = await this.database.query(
-      `INSERT INTO ${this.table} (firstname, lastname, email, password, role_id, date) VALUES (?, ?, ?, ?, ?, ?)`,
-      [firstname, lastname, email, password, role_id, date]
+      `INSERT INTO ${this.table} (firstname, lastname, email, password) VALUES (?, ?, ?, ?)`,
+      [firstname, lastname, email, password]
     );
 
     return result.insertId;
@@ -41,8 +41,6 @@ class UserRepository extends AbstractRepository {
     return result;
   }
 
- 
-
   async delete(id) {
     const [result] = await this.database.query(
       `DELETE FROM ${this.table} WHERE id=?`,
@@ -50,6 +48,14 @@ class UserRepository extends AbstractRepository {
     );
 
     return result;
+  }
+
+  async findByEmail(email) {
+    const [result] = await this.database.query(
+      `SELECT firstname, lastname, email, password, role_id FROM ${this.table} WHERE email = ?`,
+      [email]
+    );
+    return result
   }
 }
 
