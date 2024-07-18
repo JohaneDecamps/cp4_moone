@@ -10,7 +10,6 @@ const {curentUser, setCurrentUser} = useOutletContext()
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
@@ -59,9 +58,7 @@ const {curentUser, setCurrentUser} = useOutletContext()
                 /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,64}$/,
               message: "Format invalide",
             },
-            validate: (value) =>
-              value === watch("password") ||
-              "Les mots de passe ne correspondent pas ",
+            
           })}
         />
         {errors.confirmpassword && (
