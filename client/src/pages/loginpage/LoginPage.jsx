@@ -2,10 +2,11 @@
 import { useForm } from "react-hook-form";
 
 import axios from "axios";
-import {useOutletContext} from "react-router-dom"
+import {useOutletContext, useNavigate} from "react-router-dom"
 
 export default function LoginPage() {
 const {curentUser, setCurrentUser} = useOutletContext()
+const navigate= useNavigate();
 
   const {
     register,
@@ -20,7 +21,7 @@ const {curentUser, setCurrentUser} = useOutletContext()
       await axios
         .post("http://localhost:3310/api/auth/login", data, {
           withCredentials: true,
-        })
+        }).finally(() => navigate("/"))
         .then((response) => {
           setCurrentUser(response.data.user);
         }); 

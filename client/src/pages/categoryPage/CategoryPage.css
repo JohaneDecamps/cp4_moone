@@ -2,10 +2,15 @@
   font-family: Bellota;
   src: url("../../assets/fonts/Bellota_Text/BellotaText-Light.ttf");
 }
-
+.button-back-category {
+  background-color: transparent;
+  border: none;
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
 .title-categoryPage {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-family: "Bellota";
   font-weight: 100;
 }
