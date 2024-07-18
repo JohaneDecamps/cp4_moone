@@ -14,4 +14,10 @@ const articlesRouter = require("./articles/router")
 
 router.use("/articles", articlesRouter)
 
+const authRouter = require("./auth/router")
+
+router.use("/auth", authRouter)
+
 module.exports = router;
+
+

@@ -25,7 +25,7 @@ const read = async (req, res, next) => {
 
 const add = async (req, res, next) => {
   try {
-    const { firstname, lastname, email, password, date, role_id } = req.body;
+    const { firstname, lastname, email, password } = req.body;
    
 
    await tables.user.create(
@@ -33,8 +33,6 @@ const add = async (req, res, next) => {
       lastname,
       email,
       password,
-      role_id,
-      date
     );
 
     res.sendStatus(201);
