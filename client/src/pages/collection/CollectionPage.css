@@ -44,6 +44,7 @@
 .article-image {
   height: 14rem;
   width: 12rem;
+  object-fit: cover;
 }
 
 @media screen and (width > 1000px) {
