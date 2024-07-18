@@ -5,23 +5,26 @@
 
 .container-card {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 0.3rem;
+  flex-direction: row;
+  gap: 6rem;
   margin-top: 3rem;
-  text-align: center;
-}
-* {
-  margin: 0;
+  font-family: "Bellota";
 }
 
 .image-card {
-  height: 12rem;
-  width: 10rem;
+  height: 20rem;
+  width: 18rem;
   object-fit: cover;
 }
 
 .reference-card {
   font-family: "Bellota";
-  font-weight: 100;
+  font-weight: 1000;
+  font-size: 2rem;
+}
+.description-card {
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-weight: 3000;
 }

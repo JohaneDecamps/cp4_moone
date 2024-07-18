@@ -8,6 +8,7 @@ import HomePage from "./pages/homepage/HomePage";
 import CollectionPage from "./pages/collection/CollectionPage";
 import CategoryPage from "./pages/categoryPage/CategoryPage";
 import AdminPage from "./pages/adminpage/AdminPage";
+import ArticlePage from "./pages/articlepage/ArticlePage";
 import SignupPage from "./pages/signuppage/SignupPage";
 import LoginPage from "./pages/loginpage/LoginPage"
 
@@ -28,6 +29,12 @@ const router = createBrowserRouter([
       {
         path: "categories/:name",
         element: <CategoryPage />,
+      },
+      {
+        path: "articles/:id",
+        element: <ArticlePage/>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3310/api/articles/${params.id}`),
       },
       {
         path : "/admin",

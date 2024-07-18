@@ -6,7 +6,7 @@
   font-family: "Bellota";
 }
 
-.title-article-form {
+.title-form {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -25,6 +25,7 @@
 
 .input-add-article {
   display: flex;
+  margin-left: 3rem;
 }
 
 .input-image-article {

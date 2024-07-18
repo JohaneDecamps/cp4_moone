@@ -36,7 +36,7 @@ export default function ArticlesAdd() {
 
   return (
     <section className="form-add-container">
-      <h1 className="title-article-form"> Ajouter un article </h1>
+      <h1 className="title-form"> Ajouter un article </h1>
       <form className="form-add-article"onSubmit={handleSubmit(onSubmit)}>
         <div className="input-add-article"> 
         <label htmlFor="reference"> Reference </label>
@@ -88,7 +88,7 @@ export default function ArticlesAdd() {
         <input 
         type="text"
         name="image"
-        placeholder="Veuillez entrer un url"
+        placeholder="Veuillez entrer une url"
         className="input-image-article"
         {...register("image", {
             required: "ce champs est requis"

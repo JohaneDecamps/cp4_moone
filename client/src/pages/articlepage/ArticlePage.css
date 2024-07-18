@@ -1,0 +1,11 @@
+.container-articlePage {
+  display: flex;
+  max-width: 60rem;
+}
+
+.title-random {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: "Bellota";
+}
