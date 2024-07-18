@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 import "./CategoryAdd.css";
 
@@ -14,8 +15,10 @@ export default function CategoryAdd() {
   const onSubmit = async (dataCategory) => {
     try {
       await axios.post("http://localhost:3310/api/categories", dataCategory);
+      toast.success("La categorie a bien été ajouté")
     } catch (err) {
       console.error(err);
+      toast.error("Une erreur est survenue")
     }
     console.info("datacat:", dataCategory);
   };
