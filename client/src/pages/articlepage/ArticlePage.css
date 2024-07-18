@@ -7,6 +7,7 @@
 }
 
 .container-articlePage {
+  margin-left: 3rem;
   display: flex;
   max-width: 60rem;
 }
