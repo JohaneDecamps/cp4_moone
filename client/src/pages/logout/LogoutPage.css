@@ -1,0 +1,28 @@
+.logoutPage {
+  font-family: "Bellota";
+}
+
+.container-logout {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+.button-connexion {
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+.button-backhome {
+  text-decoration: underline;
+  font-size: 1.3rem;
+  padding-right: 1.4rem;
+}
+
+.button-deconnexion {
+  background-color: #2e3a36;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}

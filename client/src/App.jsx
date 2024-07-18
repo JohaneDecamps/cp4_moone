@@ -14,8 +14,7 @@ useEffect(() => {
 
   return (
     <main>
-      <p>  {currentUser?.firstname} </p>
-      <NavBar />
+      <NavBar user={currentUser} />
       <Outlet context= {{currentUser, setCurrentUser}} />
     </main>
   );
