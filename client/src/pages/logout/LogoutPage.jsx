@@ -20,18 +20,18 @@ export default function Logoutpage() {
   return (
     <div className="logoutPage">
       {currentUser == null ? (
-        <section className="container-logout">
+        <section  className="logout-auth" >
           <h1> Vous n'etes pas connecté </h1>
           <Link to="/login" className="button-connexion"> Se Connecter </Link>
         </section>
       ) : (
-        <section className="container-logout">
+        <section className="logout-auth">
           <h1> Etes-vous sûr de vouloir vous deconnecter ? </h1>
 
           <button className="button-deconnexion" type="button" onClick={logout}>
             Se deconnecter
           </button>
-          <Link to="/" className="button-backhome"> Revenir à l'acceuil </Link>
+          <Link to="/" id="button-backhome"> Revenir à l'acceuil </Link>
         </section>
       )}
     </div>

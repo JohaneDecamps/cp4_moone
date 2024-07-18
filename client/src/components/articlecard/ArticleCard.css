@@ -2,19 +2,18 @@
   font-family: Bellota;
   src: url("../../assets/fonts/Bellota_Text/BellotaText-Light.ttf");
 }
-
 .container-card {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  gap: 6rem;
+  flex-direction: column;
+
   margin-top: 3rem;
   font-family: "Bellota";
 }
 
 .image-card {
-  height: 20rem;
-  width: 18rem;
+  height: 10rem;
+  width: 12rem;
   object-fit: cover;
 }
 
@@ -27,4 +26,32 @@
   margin-top: 3rem;
   font-size: 1rem;
   font-weight: 3000;
+}
+
+@media screen and (width > 1000px) {
+  .container-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 6rem;
+    margin-top: 3rem;
+    font-family: "Bellota";
+  }
+
+  .image-card {
+    height: 20rem;
+    width: 18rem;
+    object-fit: cover;
+  }
+
+  .reference-card {
+    font-family: "Bellota";
+    font-weight: 1000;
+    font-size: 2rem;
+  }
+  .description-card {
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 3000;
+  }
 }

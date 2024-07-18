@@ -11,7 +11,7 @@ const position = [44.8622756, -0.5930638];
 
 export default function HomePage() {
   return (
-    <>
+    <section className="homepage">
       <img src={img} className="photo-homage" alt="photographie" />
       <h1 className="title-article-one"> Article 1 </h1>
       <article className="article-one">
@@ -70,6 +70,6 @@ export default function HomePage() {
           sed risus pretium quam vulputate dignissim suspendisse.
         </p>
       </article>
-    </>
+    </section>
   );
 }

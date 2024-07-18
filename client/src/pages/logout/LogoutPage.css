@@ -1,22 +1,29 @@
 .logoutPage {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Bellota";
 }
 
-.container-logout {
+.logout-auth {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  margin-top: 6rem;
+  gap: 2rem;
+  margin-top: 5rem;
 }
+
 .button-connexion {
   text-decoration: underline;
   font-size: 1.3rem;
+  text-align: center;
 }
 
-.button-backhome {
+#button-backhome {
   text-decoration: underline;
   font-size: 1.3rem;
   padding-right: 1.4rem;
+  text-align: center;
 }
 
 .button-deconnexion {

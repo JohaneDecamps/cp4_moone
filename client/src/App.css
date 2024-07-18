@@ -1,7 +1,12 @@
-* {
+/* * {
   margin: 0 auto;
-}
+} */
 
 body {
   background-color: #f6f2ec;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
