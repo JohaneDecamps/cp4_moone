@@ -1,0 +1,29 @@
+.title-login {
+  text-align: center;
+  font-family: "Bellota";
+  margin-top: 3rem;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 1.6rem;
+}
+
+.input-login-pwd {
+  margin-right: 2.5rem;
+}
+.position-button-login {
+  padding-left: 3.9rem;
+}
+
+.button-login {
+  background-color: var(--color-green);
+  border: none;
+  width: 12rem;
+  height: 1.8rem;
+  color: white;
+  font-family: "Bellota";
+  margin-top: 1rem;
+}
