@@ -1,3 +1,11 @@
+@import url("../../variables.css");
+
+.button-back {
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem;
+}
+
 .container-articlePage {
   display: flex;
   max-width: 60rem;

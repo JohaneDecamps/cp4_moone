@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 
 import imgCollection from "../../assets/images/img-collectionpage.jpeg";
 import "./CategoryPage.css"
+import back from "../../assets/logos/back.png"
 
 export default function CategoryPage() {
 
@@ -22,6 +23,11 @@ console.info(result)
   }, [categoryName])
 console.info("result", result)
 console.info("categoryname:", categoryName)
+
+const handleBack = () => {
+  window.history.back();
+}
+
     return (
         <> 
         <img
@@ -29,6 +35,9 @@ console.info("categoryname:", categoryName)
         className="photo-category"
         alt="photographie"
       />
+       <button type="button" className="button-back-category" onClick={handleBack}> 
+    <img src={back} alt="back"/>
+    </button>
 
 <h1 className="title-categoryPage"> {categoryName.name} </h1>
         <div className="container-article-category"> 
