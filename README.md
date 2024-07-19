@@ -1,21 +1,26 @@
-# ckp4
+# Moone Ceramique
 
-This project uses Harmonia. Harmonia is a framework meant to serve as a foundation for every project following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying a pedagogical tool.
+Moone Ceramique est un projet réalisé dans le cadre du checkpoint 4 de la formation de web developpeur à la Wild Code School, c'est un site internet à destination des personnes qui s'interressent à la poterie et qui souhaiteraient se renseigner sur le sujet. On retrouve aussi sur le site une partie utilisateur depuis laquelle il pourra poster des articles.
 
-## Setup & Use
+##  Use
+- Harmonia
+- React
+- Argon 2
+- Joi
+- JsonWebToken
+- react-leaflet
+- react-hook-form
+- react-toastify
+- swiper
 
-**Windows users:** be sure to run these commands in a git terminal to avoid [issues with newline formats](https://en.wikipedia.org/wiki/Newline#Issues_with_different_newline_formats):
+## Modélisation 
 
-```
-git config --global core.eol lf
-git config --global core.autocrlf false
-```
+<img width="633" alt="Capture d’écran 2024-07-19 à 00 45 46" src="https://github.com/user-attachments/assets/28f379df-c066-498d-b7ee-10c43150ba99">
 
-- In VSCode, install plugins **Prettier - Code formatter** and **ESLint** and configure them
-- Clone this repo, enter it
-- Run command `npm install`
-- Create environment files (`.env`) in both `server` and `client`: you can copy `.env.sample` files as starters (**don't** delete them)
+## Les maquettes 
+
+![Capture d’écran 2024-07-19 à 17 04 44](https://github.com/user-attachments/assets/15d92793-4708-4157-9597-fce7f0a15ad6)
+![Capture d’écran 2024-07-19 à 17 04 50](https://github.com/user-attachments/assets/6ca36ac5-6232-45bc-a497-2a6b45a76c81)
 
 ### Available Commands
 
