@@ -30,12 +30,14 @@
 
 .input-image-article {
   margin-left: 4rem;
+  font-family: "Bellota";
 }
 
 .input-description-article {
   margin-left: 2rem;
   height: 5rem;
   width: 20rem;
+  font-family: "Bellota";
 }
 
 .input-category-article {
@@ -44,6 +46,7 @@
 
 .input-reference-add {
   margin-left: 2.5rem;
+  font-family: "Bellota";
 }
 
 .button-add-article {

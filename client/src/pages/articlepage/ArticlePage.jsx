@@ -8,7 +8,6 @@ import "./ArticlePage.css"
 
 export default function ArticlePage() {
   const articleDatas = useLoaderData();
-  console.info("article séléctionné:", articleDatas);
 
 const handleBack = () => {
   window.history.back();
@@ -22,7 +21,7 @@ const handleBack = () => {
     <section className="container-articlePage">
       <ArticleCard article={articleDatas} />
  </section>
-   <h1 className="title-random"> Articles similaires </h1>
+   <h1 className="title-random"> Plus d'articles </h1>
       <ArticleRandom />
     </>
   );

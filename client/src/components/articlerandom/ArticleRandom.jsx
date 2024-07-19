@@ -20,7 +20,7 @@ export default function ArticleRandom() {
     };
     fetchArticle();
   }, []);
-  console.info("random is", articleRandom);
+
 
   return (
 

@@ -23,7 +23,6 @@ export default function ArticlesAdd() {
       console.error(err);
       toast.error("Une erreur est survenue")
     }
-    console.info("data", dataArticles);
   };
 
   useEffect(() => {
@@ -60,7 +59,7 @@ export default function ArticlesAdd() {
             {" "}
             Description{" "}
           </label>
-          <input
+          <textarea
             type="text"
             name="description"
             className="input-description-article"

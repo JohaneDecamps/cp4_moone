@@ -20,7 +20,6 @@ export default function CategoryAdd() {
       console.error(err);
       toast.error("Une erreur est survenue")
     }
-    console.info("datacat:", dataCategory);
   };
 
   return (
