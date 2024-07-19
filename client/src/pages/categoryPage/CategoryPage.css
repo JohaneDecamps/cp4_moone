@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Bellota;
+  src: url("../../assets/fonts/Bellota_Text/BellotaText-Light.ttf");
+}
+.button-back-category {
+  background-color: transparent;
+  border: none;
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+.title-categoryPage {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Bellota";
+  font-weight: 100;
+}
+
+.photo-category {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  opacity: 60%;
+}
+.container-article-category {
+  margin-top: 2rem;
+  margin-bottom: 30rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  a {
+    margin: 0;
+  }
+  .article-reference-category {
+    text-align: center;
+    font-family: "Bellota";
+    font-size: 1.3rem;
+  }
+}
+
+.article-image-category {
+  height: 15rem;
+  width: 12rem;
+}

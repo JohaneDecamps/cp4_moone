@@ -1,0 +1,20 @@
+@import url("../../variables.css");
+
+.button-back {
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem;
+}
+
+.container-articlePage {
+  margin-left: 3rem;
+  display: flex;
+  max-width: 60rem;
+}
+
+.title-random {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  margin-left: 3rem;
+  font-family: "Bellota";
+}

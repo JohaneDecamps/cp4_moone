@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Allerta;
+  src: url("../../assets/fonts/Bellota_Text/BellotaText-Light.ttf");
+}
+
+.avatar {
+  width: 1.5rem;
+}
+.logo {
+  width: 8rem;
+  height: 5rem;
+  margin-left: 1rem;
+}
+.navbar {
+  font-family: "Bellota";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+}
+
+.link-nav {
+  margin-right: 1rem;
+  a {
+    margin-left: 1rem;
+    color: black;
+    text-decoration: none;
+  }
+}

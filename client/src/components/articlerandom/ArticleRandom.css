@@ -1,0 +1,42 @@
+.random-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 20rem;
+}
+
+#random-image {
+  width: 12rem;
+  height: 14rem;
+  object-fit: cover;
+}
+
+#swipper-co {
+  height: 14rem;
+  width: 20rem;
+  margin-bottom: 40rem;
+}
+@media screen and (width > 1000px) {
+  .random-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 20rem;
+  }
+
+  #random-image {
+    width: 12rem;
+    height: 14rem;
+    object-fit: cover;
+  }
+
+  #swipper-co {
+    height: 14rem;
+    width: 60rem;
+    margin-bottom: 40rem;
+  }
+}

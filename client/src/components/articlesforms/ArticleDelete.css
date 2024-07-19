@@ -1,0 +1,26 @@
+.form-delete-container {
+  margin: 0 auto;
+  justify-content: center;
+  width: 40rem;
+  height: 15rem;
+  background-color: #cd998943;
+  margin-top: 3rem;
+  box-shadow: 3px 3px 3px rgb(150, 147, 147);
+  font-family: "Bellota";
+  margin-bottom: 30rem;
+}
+
+.input-delete-article {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.input-name-category {
+  margin-top: 1rem;
+  margin-right: 15rem;
+}
+
+.delete-button-category {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}

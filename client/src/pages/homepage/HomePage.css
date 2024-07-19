@@ -1,0 +1,117 @@
+body {
+  margin: 0 auto;
+}
+
+.photo-homage {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-one {
+  font-family: "Bellota";
+  display: flex;
+  flex-direction: column;
+  padding-left: 8rem;
+  max-width: 50rem;
+  gap: 2rem;
+}
+
+.title-article-one {
+  text-align: center;
+  margin: 2rem;
+  font-family: "Allerta";
+}
+
+.img-art1 {
+  width: 20rem;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.title-article-two {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font-family: "Allerta";
+}
+.article-two {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rem;
+  font-family: "Bellota";
+  gap: 2rem;
+}
+.text-two {
+  margin-left: 0;
+  margin-right: 9rem;
+  max-width: 35rem;
+}
+
+#map {
+  width: 30rem;
+  height: 20rem;
+  margin-left: 3rem;
+}
+.leaflet-control-zoom-out,
+.leaflet-control-zoom-in {
+  padding: 0;
+}
+
+@media screen and (width > 1000px) {
+  .photo-homage {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .article-one {
+    font-family: "Bellota";
+    display: flex;
+    flex-direction: row;
+    padding-left: 8rem;
+    max-width: 50rem;
+    gap: 2rem;
+  }
+
+  .title-article-one {
+    text-align: center;
+    margin: 2rem;
+    font-family: "Allerta";
+  }
+
+  .img-art1 {
+    width: 20rem;
+    height: 16rem;
+    object-fit: cover;
+  }
+
+  .title-article-two {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-family: "Allerta";
+  }
+  .article-two {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30rem;
+    font-family: "Bellota";
+    gap: 2rem;
+  }
+  .text-two {
+    margin-left: 0;
+    margin-right: 9rem;
+    max-width: 35rem;
+  }
+
+  #map {
+    width: 30rem;
+    height: 20rem;
+    margin-left: 3rem;
+  }
+  .leaflet-control-zoom-out,
+  .leaflet-control-zoom-in {
+    padding: 0;
+  }
+}

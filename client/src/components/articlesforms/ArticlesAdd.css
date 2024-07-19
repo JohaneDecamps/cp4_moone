@@ -1,0 +1,58 @@
+.form-add-article {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: "Bellota";
+}
+
+.title-form {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Bellota";
+}
+
+.form-add-container {
+  margin: 0 auto;
+  justify-content: center;
+  width: 40rem;
+  height: 25rem;
+  background-color: #cd998943;
+  margin-top: 3rem;
+  box-shadow: 3px 3px 3px rgb(150, 147, 147);
+}
+
+.input-add-article {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.input-image-article {
+  margin-left: 4rem;
+  font-family: "Bellota";
+}
+
+.input-description-article {
+  margin-left: 2rem;
+  height: 5rem;
+  width: 20rem;
+  font-family: "Bellota";
+}
+
+.input-category-article {
+  margin-left: 2.5rem;
+}
+
+.input-reference-add {
+  margin-left: 2.5rem;
+  font-family: "Bellota";
+}
+
+.button-add-article {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 8rem;
+  margin-left: 2rem;
+}
