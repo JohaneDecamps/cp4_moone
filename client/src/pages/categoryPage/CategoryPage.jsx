@@ -9,7 +9,6 @@ export default function CategoryPage() {
 
 const [result, setResult] = useState()
 const categoryName = useParams();
-console.info(result)
 
   useEffect(()=>{
       const fetchCategory = async () => {
@@ -21,8 +20,6 @@ console.info(result)
       };
       fetchCategory()
   }, [categoryName])
-console.info("result", result)
-console.info("categoryname:", categoryName)
 
 const handleBack = () => {
   window.history.back();

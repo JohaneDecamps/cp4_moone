@@ -1,10 +1,9 @@
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 
 import "leaflet/dist/leaflet.css";
-
 import "./HomePage.css";
-import imgart1 from "../../assets/images/img-art1.jpeg";
 
+import imgart1 from "../../assets/images/img-art1.jpeg";
 import img from "../../assets/images/img-homepage.jpeg";
 
 const position = [44.8622756, -0.5930638];

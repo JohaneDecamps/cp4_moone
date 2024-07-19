@@ -6,7 +6,7 @@ import imgCollection from "../../assets/images/img-collectionpage.jpeg";
 
 export default function CollectionPage() {
   const articleData = useLoaderData();
-  console.info(articleData);
+
   const [result, setResult] = useState();
 
   useEffect(() => {
@@ -17,7 +17,6 @@ export default function CollectionPage() {
     };
     fetchCategory();
   }, []);
-  console.info(result);
 
   return (
     <>
@@ -37,11 +36,10 @@ export default function CollectionPage() {
         </div>
         <div className="articles-collection">
           {articleData?.map((a) => (
-              <Link to={`/articles/${a.id}`} key={a.reference}>
-                <img src={a.image} className="article-image" alt="" />
-                <h1 className="reference"> {a.reference} </h1>
-              </Link>
-     
+            <Link to={`/articles/${a.id}`} key={a.reference}>
+              <img src={a.image} className="article-image" alt="" />
+              <h1 className="reference"> {a.reference} </h1>
+            </Link>
           ))}
         </div>
       </section>

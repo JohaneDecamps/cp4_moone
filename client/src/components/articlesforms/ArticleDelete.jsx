@@ -26,7 +26,6 @@ export default function ArticlesDelete() {
       console.error(err);
       toast.error("Une erreur est survenue")
     }
-    console.info("data", dataArticles);
   };
 
   useEffect(() => {

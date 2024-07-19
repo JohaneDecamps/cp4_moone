@@ -30,7 +30,6 @@ export default function LoginPage() {
     } catch (err) {
       console.error(err);
     }
-    console.info("data", data);
   };
 
   return (
